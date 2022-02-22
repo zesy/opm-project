@@ -1,0 +1,336 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+hr{
+    width: 100%;
+}
+
+.hei100{
+    height: 100%;
+}
+.wid100{
+    width: 100%;
+}
+/* The side navigation menu */
+.sidenav {
+    margin-top: 51px;
+    height: 100%; /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #28a745;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 5px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 0.8;
+}
+
+.fix51margin{
+    height: 51px; /* 100% Full-height */
+}
+.sidenav h1{
+    text-align: center;
+    color: white;
+}
+
+.main{
+    min-height: 100%; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: relative; /* Stay in place */
+    transition: margin-left .5s;
+    padding-top: 10px;
+}
+
+@media only screen
+    and (min-device-width: 920px){     
+        .sidenav::-webkit-scrollbar { width:0px; }
+        .sidenav::-webkit-scrollbar-track { background:#28a745;}
+        .sidenav::-webkit-scrollbar-track-piece { background:#28a745;}
+        .sidenav::-webkit-scrollbar-thumb { background:#165F27;}
+}
+
+@media only screen
+    and (max-width : 1050px) {
+    /* MOBILE/TABLETS */
+    .closebtn{
+        display: block;
+    }
+    .sidenav{
+        width: 0;
+    }
+}
+@media only screen 
+      and (min-width: 1051px) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+    /* DESKTOP */
+    .closebtn{
+        display: none;
+    }
+    .sidenav{
+        width: 20%;
+    }
+    .main{
+        width: 80%;
+        margin-left: 20%; 
+    }
+}
+
+/* The navigation menu links */
+.sidenav a, p {
+    padding: 2px 0 2px 20px;
+    margin: 5px 0px 0px 0px;
+    text-decoration: none;
+    font-size: 1.7em;
+    color: white;
+    display: block;
+    transition: 0.5s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #28a745;
+    background-color: white;
+}
+.sidenav a:active {
+    color: #28a745;
+    background-color: white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+/* AVATAR IMG PADDING */
+.avatarimgpdd{
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.imgw{
+    width: 100%;
+    height: 170px;
+}
+
+.btn-menu-shadow:hover{
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+}
+.btn-menu-shadow:active{
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+}
+
+#historia < p{
+    text-align: center;
+    font-family: 'Allan';
+}
+
+.ddcheck{
+    background: white;
+    color: black;
+    border: 1px solid lightgray;
+}
+
+
+.situChBox{
+    float: left;
+    width: 49%;
+    height:100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid lightgray;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.socialText1em{
+    font-size: 1.2em;
+}
+
+#img-preview{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.smalltxtsize{
+    font-size: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 0;
+}
+
+.halfdiv{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.halfdiv-left{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+.halfdiv-right{
+    width: 50%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.configlabel{
+    float: left;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+.nomargin{
+    margin: 0;
+}
+.fixcardheader{
+    margin: 0;
+    padding: 5px;
+}
+
+.fixcardheader h5{
+    margin-top: 5px;
+}
+
+.border1px{
+    border: 1px solid lightgray;
+}
+
+.btn-uploadavatar:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid white;
+}
+
+.card{
+    border-radius: 0;
+}
+
+.vertenteth{
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.vertentetd td{
+    display: table-cell;
+    vertical-align: middle;
+}
+.vertentetd button{
+    width: 35px;
+    padding: 5px;
+    margin: 0;
+}
+
+.tb-th{
+    width: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.tb-txt-center{
+    text-align: center;
+}
+
+.tb-td td{
+    display: table-cell;
+    vertical-align: middle;
+}
+.tb-td button{
+    width: 35px;
+    padding: 5px;
+    margin: 0;
+}
+
+
+.instrucard{
+    border: 1px dotted lightgrey;
+    padding: 0px;
+    margin: 3px;
+}
+
+.instrucardp{
+    color: black;
+    font-size: 0.8em;
+}
+
+.bordatopbot{
+     border-bottom: 1px solid lightgrey;
+     border-top:  1px solid lightgrey;
+}
+
+.linkmenu a, a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+
+.tableList tr > td{
+    margin: 0;
+    padding: 5px;
+}
+
+.perfilmenu a{
+    transition: .8s;
+}
+.perfilmenu a:hover{
+    text-indent: 5%;
+}
+.td-pad5px td{
+    padding: 5px;
+}
+
+.margin5pxrl{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.afinidadeselec, .afinidadeselec option, .afinidadeselec:active, .afinidadeselec:focus{
+    font-family: 'Font Awesome 5 Free', 'Calibri';
+    font-weight: 501;
+    color: yellow;
+}
+#avataruploaddiv{opacity: 0; transition: .5s;}
+.labelavatar:hover{cursor: pointer;}
+.labelavatar:hover #avatarnamediv{
+    opacity: 0;
+}
+.labelavatar:hover #avataruploaddiv{
+    opacity: 1;
+}
